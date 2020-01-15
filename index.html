@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carniceria</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="topnav " id="myTopnav">
+            <div class="flexthis">
+                <a href="#" class="active">Inicio</a>
+                <a href="#">Servicios</a>
+                <a href="#">Productos</a>
+                <a href="#">Contacto</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <!--DIV PRINCIPAL-->
+    <main class="main_grid">
+        <article class="mainDiv">
+            <section class="content">
+                <h1>Presentacion</h1>
+                <p>En Carnicerías ACME ponemos a su disposición las mejores carnes, embutidos y platos preparados, entre
+                    otras
+                    delicias gourmet. Si tienen un evento y quieren deleitar a sus invitados con unos productos sanos,
+                    frescos y
+                    sabrosos, contacten con nosotros.</p>
+                <h2>Reparto a domicilio</h2>
+                <p>
+                    Realicen su pedido hoy mismo y mañana lo tendrán listo en su domicilio.</p>
+                <h2>Corte tradicional</h2>
+                <p>No tenemos bandejas preparadas. Nuestro corte es artesano y profesional.</p>
+            </section>
+            <!--cajas imagenesL-->
+            <section class="SubGrid">
+                <div class="Sdiv1">
+                    <h3>Calidad</h3>
+                    <img src="img/carne.jpg" alt="pic">
+                    <p>
+                        Carne de calidad de los valles pirenáicos. Con las mejores garantías de sanidad y sabor.</p>
+                </div>
+                <div class="Sdiv2">
+                    <h3>Servicio 24h</h3>
+                    <img src="img/entrega.jpg" alt="pic">
+                    <p>
+
+                        En nuestro transporte refigerado garantizamos que cumpliremos en 24h con nuestros compromisos.
+                    </p>
+                </div>
+                <div class="Sdiv3">
+                    <h3>Restauracion</h3>
+                    <img src="img/restaurantes.jpg" alt="pic">
+                    <p>Servimos a los mejores restaurantes de Zaragoza. Si regentas un local de restauración llámanos.
+                    </p>
+                </div>
+                <div class="Sdiv4">
+                    <h3>Charcuteria</h3>
+                    <img src="img/charcuteria.jpg" alt="pic">
+                    <p>
+                        Los mejores ejemplares de jamón ibérico y embutidos tradicionales. Especialistas en charcutería.
+                    </p>
+                </div>
+            </section>
+            <!--botones redes sociales-->
+            <div class="SocialNetworks">
+                <div class="Sn1 socialN"> <i class="fa fa-facebook" style="font-size:18px"></i></div>
+                <div class="Sn2 socialN"><i class="fa fa-google-plus" style="font-size:18px"></i> </div>
+                <div class="Sn3 socialN"> <i class="fa fa-map-marker" style="font-size:18px"></i></div>
+            </div>
+        </article>
+        <!--formulario-->
+        <form action="#" method="post">
+            <div style="margin-bottom: 10px">
+                <div class="gridForm">
+                    <div class="f1">
+                        <h3>E-mail</h3> <input type="text" name="email" placeholder="Escriba su mail" required>
+                    </div>
+                    <div class="f2">
+                        <h3>Teléfono</h3> <input type="number" name="telefono"
+                            placeholder="Introduzca su número teléfono (opcional)">
+                    </div>
+                    <div class="f3">
+                        <h3>Mensaje</h3> <textarea rows="3" name="mensaje" required></textarea>
+                        <input type="submit" class="boton" value="ENVIAR">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+    <!--footer-->
+    <footer>
+        Calle Bomba, 16, 50010 Saratoga. Tfno. 666 999 666. Fax. 999 666 999. Email: email(at)hola.com
+    </footer>
+
+
+</body>
+<!--script para aparicion de el menu escondido-->
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+</html>
